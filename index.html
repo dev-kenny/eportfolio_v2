@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1565f59c5c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script src="index.js"></script>
+    <script type="text/javascript">
+      (function() {
+          emailjs.init("6lhNWVoFVpzQw2fVX");
+      })();
+    </script>
+  </head>
+  <body onmousemove="moveBackground(event)">
+    <section id="landing-page">
+      <nav>
+        <figure>
+          <a href="#" onclick="toggleModal()">
+          <img id="personal-logo" src="./assets/K_White.png" alt="personal_logo" />
+        </a>
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#projects"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link" onclick="toggleContrast()">
+            <i class="fa-sharp fa-solid fa-circle-half-stroke"></i>
+          </li>
+        </ul>
+      </nav>
+
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Hey</h1>
+          <h1 class="title yellow">I'm Kenny.</h1>
+          <p class="header__para">
+            I'm a <b class="yellow">Frontend Software Engineer</b> with a strong
+            passion for building web applications with great user experiences.
+            <br />
+            Here's a bit more <b class="yellow click" onclick="toggleModal()">about me</b>.
+          </p>
+          <div class="social__list">
+            <a
+              href="https://google.com"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://google.com"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a
+              href="./assets/David Bragg Resume.pdf"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fa-solid fa-file-pdf"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <a href="#">
+        <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fa-solid fa-envelope"></i>
+      </button>
+      </a>
+    
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">Here's a bit about me</h3>
+          <h4 class="modal__sub-title modal__sub-title--about">Frontend Sofware Engineer</h4>
+          <p class="modal__para">
+            I'm a 21 year-old Dutch <b class="yellow">frontend software engineer</b> with a strong passion for developing websites with great <b class="yellow">user experiences</b>.
+            <br>
+            I currently work on extremely difficult engineering problems and learn from a team consisting of some of the most <b class="yellow">talented</b> and <b class="yellow">experienced</b> software engineers every day.
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+            <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+            <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+            <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+            <span class="language__name">HTML</span>
+            </figure>
+          </div>
+        </div>
+
+        <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__title--contact">
+            Let's have a chat!
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--contact">
+            I'm currently open to new opportunities.
+          </h4>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label"><span class="yellow" required>* </span>Name</label>
+              <input class="input" name="user_name" type="text"></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label"><span class="yellow" required>* </span>Email</label>
+              <input class="input" name="user_email" type="email"> </input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label"><span class="yellow" required>* </span>Message</label>
+              <textarea class="input" name="message" type="text"> </textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">Send it my way</button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! Looking forward to speaking to you soon.
+          </div>
+        </div>
+      </div>
+      <img src="./assets/semi circle.svg" class="shape shape--0">
+      <img src="./assets/circle.svg" class="shape shape--1">
+      <img src="./assets/squiggly.svg" class="shape shape--2">
+      <img src="./assets/circle.svg" class="shape shape--3">
+      <img src="./assets/triangle.svg" class="shape shape--4">
+      <img src="./assets/circle.svg" class="shape shape--5">
+      <img src="./assets/squiggly.svg" class="shape shape--6">
+      <img src="./assets/circle.svg" class="shape shape--7">
+      <img src="./assets/semi circle.svg" class="shape shape--8">
+    </section>
+  
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="yellow">projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  class="project__img"
+                  src="assets/blinker mockup.png"
+                  alt=""
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Cars Sales Project
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript, Vue, Vuex
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Est magnam numquam commodi veniam! Ad beatae culpa enim
+                    velit saepe, delectus ratione quia officia harum facilis
+                    deserunt at repellat voluptatibus totam.
+                  </p>
+                  <div class="project__description--links">
+                    <a class="project__description--link" href="">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a class="project__description--link" href="">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  class="project__img"
+                  src="assets/blinker mockup.png"
+                  alt=""
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Cars Sales Project
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript, Vue, Vuex
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Est magnam numquam commodi veniam! Ad beatae culpa enim
+                    velit saepe, delectus ratione quia officia harum facilis
+                    deserunt at repellat voluptatibus totam.
+                  </p>
+                  <div class="project__description--links">
+                    <a class="project__description--link" href="">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a class="project__description--link" href="">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+        <figure>
+          <img class="footer__logo--img" src="assets/K_White.png" alt="">
+        </figure>
+        <div class="footer__social--list">
+          <a class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+          " href="#" target="_blank">Github</i></a>
+          <a class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+          " href="#" target="_blank">Linkedin</i></a>
+          <a class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+          " href="#" onclick="toggleModal()">Contact</i></a>
+          <a class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+          " href="./assets/David Bragg Resume.pdf" target="_blank">Resume</i></a>
+        </div>
+        <div class="footer__copyright">Copyright © 2023 Kenny N.</div>
+      </div>
+    </div>
+    </footer>
+  </body>
+</html>
