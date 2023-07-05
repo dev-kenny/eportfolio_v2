@@ -174,11 +174,11 @@ nav,
   background-color: white;
 }
 
-.dark-theme .mail__btn {
+.dark-theme .mail__btn,
+.dark-theme .fa-envelope {
   background-color: white;
   color: #242424;
 }
-
 
 /*
 
